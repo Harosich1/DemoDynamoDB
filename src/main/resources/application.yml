@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: my-application
+  cloud:
+    aws:
+      dynamodb:
+        region: us-east-1
+        endpoint: http://localhost:8000

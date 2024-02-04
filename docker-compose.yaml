@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  dynamodb:
+    image: amazon/dynamodb-local
+    ports:
+      - "8000:8000"
+    environment:
+      AWS_ACCESS_KEY_ID: id
+      AWS_SECRET_ACCESS_KEY: key
+      AWS_REGION: kz
+
+volumes:
+  dynamodb-data:
