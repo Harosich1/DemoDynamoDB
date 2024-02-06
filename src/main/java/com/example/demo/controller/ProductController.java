@@ -40,4 +40,16 @@ public class ProductController {
   public List<Product> getAllProduct() {
     return productRepository.getAllProducts();
   }
+
+  @GetMapping(value = "/get-page-product")
+  @ResponseStatus(HttpStatus.FOUND)
+  public List<Product> getPageProduct() {
+    return productRepository.getProductsByPage();
+  }
+
+  @GetMapping(value = "/get-phone-product")
+  @ResponseStatus(HttpStatus.FOUND)
+  public List<Product> getPhoneProduct() {
+    return productRepository.getPhoneProducts();
+  }
 }
